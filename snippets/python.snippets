@@ -137,6 +137,8 @@ snippet bpdb
 # ipython debugger (ipdb)
 snippet ipdb
 	import ipdb;ipdb.set_trace(context=15)
+snippet epdb
+	import ipdb;ipdb.set_trace(context=15)
 # embed ipython itself
 snippet iem
 	import IPython
@@ -155,8 +157,7 @@ snippet ptpython
 	embed(globals(), locals(), vi_mode=${1:False}, history_filename=${2:None})
 # python console debugger (pudb)
 snippet pudb
-	import pudb
-	pudb.set_trace()
+	import pudb; pudb.set_trace()
 # pdb in nosetests
 snippet nosetrace
 	from nose.tools import set_trace
